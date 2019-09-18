@@ -8,6 +8,8 @@ import { ContentLayoutComponent } from './layout/content-layout/content-layout.c
 import { NavComponent } from './layout/nav/nav.component';
 import { FooterComponent } from './layout/footer/footer.component';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';  
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +19,7 @@ import { FooterComponent } from './layout/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    NgbModule,  
     AppRoutingModule
   ],
   providers: [],

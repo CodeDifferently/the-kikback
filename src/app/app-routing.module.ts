@@ -1,6 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ContentLayoutComponent } from './layout/content-layout/content-layout.component';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+@NgModule({
+    imports: [
+        MDBBootstrapModule.forRoot()
+    ],
+    schemas: [ NO_ERRORS_SCHEMA ]
+});
 
 const routes: Routes = [
   {
