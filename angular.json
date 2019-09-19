@@ -24,12 +24,8 @@
               "src/assets"
             ],
             "styles": [
-<<<<<<< HEAD
-              "src/styles.css"1
-=======
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
->>>>>>> 0c4d35c45536cf70ab5b2f5d15cab9963c243932
             ],
             "scripts": ["node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"]
