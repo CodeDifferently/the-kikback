@@ -8,6 +8,7 @@ import { ContentLayoutComponent } from './layout/content-layout/content-layout.c
 import { NavComponent } from './layout/nav/nav.component';
 import { FooterComponent } from './layout/footer/footer.component';
 
+import { AlertModule } from 'ngx-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';  
 
 @NgModule({
@@ -18,6 +19,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ContentLayoutComponent
   ],
   imports: [
+    AlertModule.forRoot(),
     BrowserModule,
     NgbModule,  
     AppRoutingModule
