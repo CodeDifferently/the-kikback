@@ -9,6 +9,8 @@ const routes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   },
+  
+
   {
   path: '',
   component: ContentLayoutComponent,
@@ -16,6 +18,10 @@ const routes: Routes = [
     {
       path: 'home',
       loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
+    },
+    {
+      path: 'about',
+      loadChildren: () => import('./modules/about/about.module').then(m => m.AboutModule)
     }
   ]
   }
