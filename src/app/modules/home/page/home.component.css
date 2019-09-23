@@ -17,3 +17,8 @@
 .carousel-control-prev {
   left: 0;
 }
+
+img{
+  width: 100%;
+  height: auto;
+}
