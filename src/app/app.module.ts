@@ -9,14 +9,16 @@ import { NavComponent } from './layout/nav/nav.component';
 import { FooterComponent } from './layout/footer/footer.component';
 
 import { AlertModule } from 'ngx-bootstrap';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';  
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutComponent } from './modules/about/about.component';  
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     FooterComponent,
-    ContentLayoutComponent
+    ContentLayoutComponent,
+    AboutComponent
   ],
   imports: [
     AlertModule.forRoot(),
