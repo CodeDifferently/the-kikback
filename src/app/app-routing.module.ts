@@ -22,7 +22,16 @@ const routes: Routes = [
     {
       path: 'about',
       loadChildren: () => import('./modules/about/about.module').then(m => m.AboutModule)
-    }
+    },
+    {
+      path: 'restoration',
+      loadChildren: () => import('./modules/restoration/restoration.module').then(m => m.RestorationModule)
+    },
+    {
+      path: 'shop',
+      loadChildren: () => import('./modules/shop/shop.module').then(m => m.ShopModule)
+    },
+    
   ]
   }
 ];

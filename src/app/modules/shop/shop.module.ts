@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AboutRoutingModule } from './about-routing.module';
+import { ShopRoutingModule } from './shop-routing.module';
 import { CarouselModule } from 'ngx-bootstrap';
 
-import { AboutComponent } from './page/about.component';
+import { ShopComponent } from './page/shop.component';
 
 
 
 @NgModule({
-  declarations: [AboutComponent],
+  declarations: [ShopComponent],
   imports: [
     CommonModule,
     CarouselModule.forRoot(),
-    AboutRoutingModule
+    ShopRoutingModule
   ]
 })
-export class AboutModule {
+export class ShopModule {
   
  }

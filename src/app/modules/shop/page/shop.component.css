@@ -1,0 +1,24 @@
+.carousel-inner{
+    padding-left:280px;
+}
+.carousel-2 {
+        display: inline-block;
+      }
+
+.carousel-control-next {
+      max-height: 500px;
+  }
+.carousel-control-next {
+    right: 0;
+}
+.carousel-control-prev {
+  max-height: 500px;
+}
+.carousel-control-prev {
+  left: 0;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
