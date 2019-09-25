@@ -1,0 +1,231 @@
+/* * {box-sizing: border-box;}
+
+
+#comparison-slider {
+  padding-right: 1000px;
+  text-align: center;
+  display: inline-block;
+}
+
+.img-comp-container {
+  display:flex;
+  position: relative;
+}
+
+.img-comp-img {  
+  border-style:solid; color: aqua;
+  
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  
+  
+}
+
+.img-comp-img img {
+  vertical-align: middle;
+}
+
+.img-comp-slider::slotted {
+  position: absolute;
+  cursor:pointer;
+  background-color: red;
+  opacity: 0.7;
+  border-radius: 50%;
+  height:38px;
+  width: 38px;
+  left: 50%;
+  top: 50%;
+  margin-left: -22px;
+  margin-top: -22px;
+  border: 3px solid black;
+  border-radius: 1000px;
+  box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+  z-index: 40;
+
+}
+
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-w3{
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container-w3 img {
+  width: 100%;
+  height: auto;
+}
+
+.container-w3 .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container-w3 .btn:hover {
+  background-color: black;
+}
+
+.container-Shipping-reg{
+  padding-left: 697px;
+
+}
+
+.img-comp-img img {
+  display: flex;
+  width:1048;
+  height:629;
+}
+
+
+@media only screen and (min-width: 768px) {
+.col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 20% !important;
+    max-height: 10% !important;
+}
+.insta {
+  width: 300px;
+  height: 400px;
+}
+  .comparison-container {
+  height: 744px;
+  width: auto;
+  }
+}  */
+
+div#comparison { 
+  width: 60vw;
+  height: 60vw;
+  max-width: 600px;
+  max-height: 600px;
+  overflow: hidden; }
+div#comparison figure { 
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/photoshop-face-before.jpg); 
+  background-size: cover;
+  position: relative;
+  font-size: 0;
+  width: 100%; 
+  height: 100%;
+  margin: 0; 
+}
+div#comparison figure > img { 
+  position: relative;
+  width: 100%;
+}
+div#comparison figure div { 
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/photoshop-face-after.jpg);
+  background-size: cover;
+  position: absolute;
+  width: 50%; 
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  overflow: hidden;
+  bottom: 0;
+  height: 100%;
+}
+
+input[type=range]{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  position: relative;
+  top: -2rem; left: -2%;
+  background-color: rgba(255,255,255,0.1);
+  width: 102%; 
+}
+input[type=range]:focus { 
+  outline: none; 
+}
+input[type=range]:active { 
+  outline: none;  
+}
+
+input[type=range]::-moz-range-track { 
+  -moz-appearance:none;
+    height:15px;
+    width: 98%;
+    background-color: rgba(255,255,255,0.1); 
+    position: relative;
+    outline: none;    
+ }
+input[type=range]::active { 
+  border: none; 
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    width: 20px; height: 15px;   
+    background: #fff;
+    border-radius: 0;
+   }
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 20px;
+  height: 15px;
+  background: #fff;
+  border-radius: 0;
+     }   
+input[type=range]:focus::-webkit-slider-thumb {
+    background: rgba(255,255,255,0.5);
+   }
+input[type=range]:focus::-moz-range-thumb {
+    background: rgba(255,255,255,0.5);
+   }
