@@ -3,3 +3,23 @@ img {
   border-style: none;
 }
 
+.stats{
+  background-color: grey;
+}
+
+.stat-item{
+  height: 100px;
+  padding-top: 30px;
+  
+}
+.row {
+  padding-bottom: 20px;
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  padding-left: 20px;
+}
