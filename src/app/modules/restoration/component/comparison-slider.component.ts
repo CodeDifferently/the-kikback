@@ -19,7 +19,7 @@ export class ComparisonComponent implements OnInit {
   
    moveDivisor() { 
 
-	  divisor.style.width = slider.value+"%";
+	  this.divisor.style.width = this.slider.value+"%";
   }
 }
 
