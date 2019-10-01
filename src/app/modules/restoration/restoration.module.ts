@@ -5,11 +5,10 @@ import { RestorationRoutingModule } from './restoration-routing.module';
 import { CarouselModule } from 'ngx-bootstrap';
 
 import { RestorationComponent } from './page/restoration.component';
-import { ComparisonComponent } from './component/comparison-slider.component'
 
 
 @NgModule({
-  declarations: [RestorationComponent, ComparisonComponent],
+  declarations: [RestorationComponent],
   imports: [
     CommonModule,
     CarouselModule.forRoot(),
